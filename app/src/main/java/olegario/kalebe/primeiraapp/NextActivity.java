@@ -12,9 +12,13 @@ public class NextActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_next);
+        /**/
         Intent i = getIntent();
+        /**/
         String textoDigitado = i.getStringExtra("texto");
+        /**/
         TextView textView = findViewById(R.id.tvTexto);
+        /**/
         textView.setText(textoDigitado);
     }
 }

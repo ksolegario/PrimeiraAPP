@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
          /*Define oque acontece quando se pressiona o botão*/
         btnEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
+
             /*onClick é executado quando o botão é clicado*/
             public void onClick(View v) {
                 /*Pegando id da caixa de texto DigiteAqui*/
@@ -35,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
                 /*Criando uma intenção para pular de uma tela para outra*/
                 Intent i = new Intent(MainActivity.this, NextActivity.class);
 
-                /*Adicionando o textoDigitao na próxima tela*/
+                /*Enviando teto para proxima Activity*/
                 i.putExtra("texto", textoDgitado);
 
-                /*Executando a intenção*/
+                /*Navega para proxima Activity*/
                 startActivity(i);
 
             }
